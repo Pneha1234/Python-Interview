@@ -90,11 +90,17 @@ class Dog():
     __slots__ = ('name', 'age')
     pass
 
-
+print("____________________________")
 buddy = Dog()
 buddy.name = "Buddy"
 buddy.age = 5
 print(type(buddy.__slots__))
+print(id(buddy.name))
+
+buddy2 = Dog()
+buddy2.name = "Buddy2"
+print(type(buddy2.__slots__))
+print(id(buddy2.name))
 # __slots__ is a way to define a fixed set of instance variables for a class.
 # This can help reduce memory usage and improve performance.
 # Tuples are immutable, while lists are mutable.
