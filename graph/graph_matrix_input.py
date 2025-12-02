@@ -29,6 +29,9 @@ def fill_matrix_with_edges(matrix, edges):
         v = edge[1]
         matrix[u][v] = 1
         matrix[v][u] = 1   # because undirected
+        # if its a weighted graph, then we can use the weight of the edge
+        # matrix[u][v] = weight
+        # matrix[v][u] = weight
     return matrix
 
 # Step 3 : print the matrix
