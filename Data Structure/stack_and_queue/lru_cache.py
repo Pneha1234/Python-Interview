@@ -71,6 +71,7 @@ class LRUCache:
         new_node = Node(key, value, ttl_ms)
         self._add(new_node)
         self.cache[key] = new_node
+        
 
         # 3. Check capacity - only count items in the cache dict
         # The head/tail dummies are not counted.
